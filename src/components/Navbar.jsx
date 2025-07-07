@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 
 const Navbar = () => {
-    const [showMobileMenu,setShowMobileMenu]=useState(false)
+    const [showMobileMenu,setShowMobileMenu]=useState(false);
+     const [isModalOpen, setIsModalOpen] = useState(false);
     useEffect(() =>{
         if (showMobileMenu) {
             document.body.style.overflow='hidden'
@@ -28,8 +29,42 @@ const Navbar = () => {
 
                 
             </ul>
-            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign-Up</button>
+             <button
+          onClick={() => setIsModalOpen(true)}
+          className="bg-white text-black font-semibold py-2 px-4 rounded-full hover:bg-gray-200"
+        >
+          Sign-Up
+        </button>
             <img onClick={()=>setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' alt="" />
+            {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-6 w-[90%] max-w-md">
+            <h2 className="text-2xl font-bold mb-4">Sign In</h2>
+            <form className="flex flex-col space-y-4">
+              <input
+                type="email"
+                placeholder="Email"
+                className="border p-2 rounded"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="border p-2 rounded"
+              />
+              <button className="bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+                Submit
+              </button>
+            </form>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="mt-4 text-sm text-gray-500 hover:underline"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    
         </div>
         {/* mobile menu */}
         <div className={`md:hidden ${showMobileMenu?'fixed w-full':'h-0 w-0'} right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}>

@@ -1,8 +1,10 @@
 import React from 'react'
 import { assets, testimonialsData } from '../assets/assets'
+import { motion } from "framer-motion";
+
 const Testimonials = () => {
   return (
-    <div className='container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='Testimonials'>
+    <motion.div initial={{opacity:0,x:100}} transition={{duration:1.5}} whileInView={{opacity:1,x:0}} viewport={{once:true}}  className='container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='Testimonials'>
         <h1 className='text-2xl sm:text-4xl text-center font-bold mb-2'>Customer <span className='underline underline-offset-4 decoration-1 under font-light'>Testimonials</span></h1>
         <p className='text-gray-500 max-w-80 text-center mb-8 mx-auto'>Real Stories from Those Who Found home with us</p>
         <div className='flex flex-wrap justify-center gap-8'>
@@ -22,7 +24,7 @@ const Testimonials = () => {
             ))}
 
         </div>
-    </div>
+    </motion.div>
   )
 
 }

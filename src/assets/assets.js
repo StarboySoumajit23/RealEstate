@@ -75,27 +75,27 @@ export const projectsData = [
 
   export const testimonialsData = [
     {
-        name: "Soumajit Bhattacharjee",
+        name: "Soumajit ",
         title: "Marketing Manager",
         image: profileimg,
         alt: "Portrait of Soumajit Bhattacharjee",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Working with their team was a game-changer. They quickly grasped my vision and delivered results beyond expectations. Their strategic insight and dedication to quality truly stand out."
     },
     {
-        name: "Richard Nelson",
+        name: "Soumajit",
         title: "UI/UX Designer",
         image: profileimg,
         alt: "Portrait of Soumajit Bhattacharjee",
         rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "They nailed the user experience right from the start. Every design decision was thoughtful and aligned perfectly with the user journey. Their creativity and precision are unmatched."
     },
     {
-        name: "James Washington",
-        title: "Co-Founder",
+        name: "Soumajit",
+        title: "Founder",
         image: profileimg,
         alt: "Portrait of Soumajit Bhattacharjee",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Their professionalism and deep understanding of our goals made them a valuable partner. From ideation to execution, they maintained the highest level of commitment and attention to detail."
     }
 ];
