@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Header from './components/Header'
-import About from './components/aBOUT.JSX'
+import About from "./components/About.jsx";
+
 import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
