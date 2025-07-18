@@ -14,7 +14,7 @@ const Header = () => {
                 Explore homes of your dreams.
             </h2>
             <div className='space-x-6 mt-16'>
-                <a href="#Project" className='border border-white px-8 py-3 rounded'>Projects</a>
+                <a href="#Projects" className='border border-white px-8 py-3 rounded'>Projects</a>
                  <a href="#Contact" className='bg-blue-500 px-8 py-3 rounded'>Contact Us</a>
             </div>
         </motion.div>
